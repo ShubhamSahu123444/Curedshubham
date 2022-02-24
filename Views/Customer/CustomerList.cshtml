@@ -1,0 +1,23 @@
+﻿
+@Model IEnumerable<Curedshubham.Models.CustomerList>
+
+
+    @{
+    }
+    <table class="table table-bordered">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Location</th>
+        </tr>
+        @foreach (var cust in Model)
+        {
+    <tr>
+        <td>@cust.Name</td>
+        <td>@cust.Email</td>
+        <td>@cust.Contact</td>
+        <td>@cust.Location</td>
+    </tr>
+        }
+    </table>
